@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ html {
+    scroll-behavior: smooth;
+  }
+body{
+
+    background-color: rgb(216, 216, 216);
+  
+}
+
+header{
+    background-color: white;
+    box-shadow: 4px 4px 8px rgb(29, 154, 192);
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    bottom: 2px solid rgb(29, 154, 192);
+   
+  position: fixed;
+    z-index: 1000;
+    width: 100%;
+    overflow-y: hidden;
+
+}
+ .logo{
+    font-size: 17px;
+    /* De preferencia colocar 17 pixel pra não aparecer a barra de rolagem*/
+ }
+ .logo h1{
+    color: rgb(29, 154, 192);
+    margin-left:  20px;
+    margin-top: 10px;
+    cursor:pointer;
+        overflow-y: hidden;
+     font-family: "Alegreya Sans", sans-serif;
+
+ }
+ .logo h1 span{
+    color:rgb(29, 154, 192);
+    font-size: 50px;
+  
+ }
+ nav ul  {
+    position:relative;
+    display: flex;
+    gap: 50px;
+    top: 20px;
+     font-size:16px;
+    
+ }
+ nav ul li a{
+    padding: 8px 16px;
+   text-decoration: none;
+   font-size: 19px;
+   color: rgb(0, 0, 0);
+   border-radius: 30px;
+   transition: 0.7s;
+}
+nav ul li a:hover{
+    background-color:   rgb(7, 233, 56);
+     color: rgb(255, 255, 255);
+ }
+ li{ 
+    list-style:none;
+   
+  
+
+     }
+     
+ 
+ nav ul  li a{
+   height: 100px;
+    text-decoration: none;
+    color: black;
+    font-size:20px;
+    transition:all 0.50s ease-in-out;
+     font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+  
+   
+
+ 
+ }
+ nav ul li a:hover{
+
+   overflow-y: hidden;
+}
+.btn{
+    position: relative;
+   border: 2px solid rgb(29, 154, 192);
+   margin-right: 100px;
+ font-size: 28px;
+   font-size: 19px;
+   color: rgb(255, 255, 255);
+   background-color: rgb(29, 154, 192);
+   border-radius: 50px;
+    top: 10px;
+    width: 70px;
+    height: 40px;
+    transition: all 0.59s ease-in-out;
+    cursor:pointer;
+
+ }
+.btn img {
+   width: 50px;
+   height: 40px;
+   transform: rotateX(-50px);
+}
+
+ .btn:hover{
+   
+    transform: translateY(-7px);
+ }
+ section{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    background-image: url(Elub_Express/-956788033.jpg);
+    border-bottom-left-radius: 20px ;
+     border-bottom-right-radius: 20px ;
+     width: 100%;
+ }
+ section .conteudo{
+    width: 50%;
+    text-align: start;
+    margin-left: 3%;
+    margin-top: 13%;
+
+ }
+ section .conteudo h1{
+    color: rgb(29, 154, 192) ;
+    font-size:70px;
+      font-family: "Alegreya Sans", sans-serif;
+      font-weight: 600;
+      padding-bottom: 20px;
+ }
+ section .conteudo p{
+   color: white;
+   font-size: 18px;
+     padding-bottom: 20px;
+ }
+ section .imagem img{
+    height: 60vh;
+    margin-left:30%;
+    margin-top: 20%;
+    border-radius: 170px;
+ }
+ /*
+ .img-animada{
+   opacity: 1;
+   transform: translateX(7px);
+   animation: mover 2.5s ease-in-out;
+ }
+ @keyframes mover {
+   0%{
+      opacity: 0;
+      transform: translateX(10px);
+   }
+   100%{
+      opacity: 1;
+      transform: translateX(0);
+   }
+   
+ }
+*/
+ #btnagendar{
+   position: relative;
+   border: 2px solid   rgb(7, 233, 56);
+   margin-right: 100px;
+    font-size: 28px;
+   font-size: 19px;
+   color: rgb(255, 255, 255);
+   background-color: rgb(7, 233, 56);
+   border-radius: 50px;
+    top: 5px;
+    width: 150px;
+    height: 50px;
+    transition: all 0.59s ease-in-out;
+    cursor:pointer;
+
+ }
+  #btnagendar:hover{
+      
+      scale: 1.1;
+  }
+ #servicos{
+     position: relative;
+    display: flex;
+    text-align:start;
+    width: 80%;
+    margin-left: 10%;
+     border-radius: 40px;
+      opacity: 0;
+    scroll-margin-top: 250px; 
+    gap: 2rem;
+      transition: all 0.9s ease;
+        transform: translateY(50px);
+ }
+ #servicos.show {
+  opacity: 1;
+  transform: translateY(0);
+}
